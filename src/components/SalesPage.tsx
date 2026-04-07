@@ -20,8 +20,8 @@ const BotonPago = ({ texto = "COMPRAR AHORA", href = "#oferta", isSmall = false 
   };
 
   const buttonClasses = `${
-    isSmall ? 'px-8 py-4 text-lg' : 'px-12 py-6 text-xl'
-  } bg-gradient-to-r from-naranja to-dorado text-fondo font-bold uppercase tracking-widest rounded-sm hover:shadow-[0_0_30px_rgba(255,106,0,0.4)] transition-all duration-300 cursor-pointer text-center no-underline inline-block border-none`;
+    isSmall ? 'px-6 py-3 text-base md:px-8 md:py-4 md:text-lg' : 'px-8 py-4 text-lg md:px-12 md:py-6 md:text-xl'
+  } bg-gradient-to-r from-naranja to-dorado text-fondo font-bold uppercase tracking-widest rounded-sm hover:shadow-[0_0_30px_rgba(255,106,0,0.4)] transition-all duration-300 cursor-pointer text-center no-underline inline-block border-none w-full md:w-auto`;
 
   return (
     <div className={`flex flex-col items-center gap-4 ${isSmall ? 'my-6' : 'my-12'}`}>
@@ -358,43 +358,59 @@ export default function SalesPage() {
           <EncabezadoEditorial subtitulo="La elección es suya">
             Comparativa: Marketing de Interrupción vs. Marketing de Atracción
           </EncabezadoEditorial>
-          <div className="max-w-5xl mx-auto px-6 overflow-x-auto">
-            <table className="w-full text-left border-collapse">
-              <thead>
-                <tr className="border-b border-white/20">
-                  <th className="py-6 px-4 font-serif text-xl text-white">Característica</th>
-                  <th className="py-6 px-4 font-serif text-xl text-rojo-oscuro">Marketing de Interrupción</th>
-                  <th className="py-6 px-4 font-serif text-xl text-naranja">Marketing de Atracción</th>
-                </tr>
-              </thead>
-              <tbody className="text-white/70">
-                <tr className="border-b border-white/10">
-                  <td className="py-6 px-4 font-bold text-white">Enfoque principal</td>
-                  <td className="py-6 px-4">Vender el producto de inmediato.</td>
-                  <td className="py-6 px-4">Ayudar al cliente a resolver un problema.</td>
-                </tr>
-                <tr className="border-b border-white/10">
-                  <td className="py-6 px-4 font-bold text-white">Relación con el cliente</td>
-                  <td className="py-6 px-4">Transaccional y efímera.</td>
-                  <td className="py-6 px-4">Basada en la confianza y la autoridad.</td>
-                </tr>
-                <tr className="border-b border-white/10">
-                  <td className="py-6 px-4 font-bold text-white">Costo a largo plazo</td>
-                  <td className="py-6 px-4">Aumenta (más competencia por anuncios).</td>
-                  <td className="py-6 px-4">Disminuye (activos digitales permanentes).</td>
-                </tr>
-                <tr className="border-b border-white/10">
-                  <td className="py-6 px-4 font-bold text-white">Percepción de marca</td>
-                  <td className="py-6 px-4">Vendedor insistente o "spam".</td>
-                  <td className="py-6 px-4">Líder de pensamiento y guía experto.</td>
-                </tr>
-                <tr className="border-b border-white/10">
-                  <td className="py-6 px-4 font-bold text-white">Medición de éxito</td>
-                  <td className="py-6 px-4">Clics y ventas directas hoy.</td>
-                  <td className="py-6 px-4">Valor de vida del cliente y lealtad.</td>
-                </tr>
-              </tbody>
-            </table>
+          <div className="max-w-5xl mx-auto px-6">
+            {/* Desktop Table View */}
+            <div className="hidden md:block overflow-x-auto">
+              <table className="w-full text-left border-collapse">
+                <thead>
+                  <tr className="border-b border-white/20">
+                    <th className="py-6 px-4 font-serif text-xl text-white">Característica</th>
+                    <th className="py-6 px-4 font-serif text-xl text-rojo-oscuro">Marketing de Interrupción</th>
+                    <th className="py-6 px-4 font-serif text-xl text-naranja">Marketing de Atracción</th>
+                  </tr>
+                </thead>
+                <tbody className="text-white/70">
+                  {[
+                    { label: "Enfoque principal", inter: "Vender el producto de inmediato.", attr: "Ayudar al cliente a resolver un problema." },
+                    { label: "Relación con el cliente", inter: "Transaccional y efímera.", attr: "Basada en la confianza y la autoridad." },
+                    { label: "Costo a largo plazo", inter: "Aumenta (más competencia por anuncios).", attr: "Disminuye (activos digitales permanentes)." },
+                    { label: "Percepción de marca", inter: "Vendedor insistente o \"spam\".", attr: "Líder de pensamiento y guía experto." },
+                    { label: "Medición de éxito", inter: "Clics y ventas directas hoy.", attr: "Valor de vida del cliente y lealtad." }
+                  ].map((row, i) => (
+                    <tr key={i} className="border-b border-white/10">
+                      <td className="py-6 px-4 font-bold text-white">{row.label}</td>
+                      <td className="py-6 px-4">{row.inter}</td>
+                      <td className="py-6 px-4">{row.attr}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+
+            {/* Mobile Card View */}
+            <div className="md:hidden space-y-8">
+              {[
+                { label: "Enfoque principal", inter: "Vender el producto de inmediato.", attr: "Ayudar al cliente a resolver un problema." },
+                { label: "Relación con el cliente", inter: "Transaccional y efímera.", attr: "Basada en la confianza y la autoridad." },
+                { label: "Costo a largo plazo", inter: "Aumenta (más competencia por anuncios).", attr: "Disminuye (activos digitales permanentes)." },
+                { label: "Percepción de marca", inter: "Vendedor insistente o \"spam\".", attr: "Líder de pensamiento y guía experto." },
+                { label: "Medición de éxito", inter: "Clics y ventas directas hoy.", attr: "Valor de vida del cliente y lealtad." }
+              ].map((row, i) => (
+                <div key={i} className="border border-white/10 bg-white/[0.02] p-6 rounded-sm">
+                  <h6 className="text-dorado font-serif text-lg mb-4 border-b border-white/10 pb-2">{row.label}</h6>
+                  <div className="space-y-4">
+                    <div>
+                      <span className="text-rojo-oscuro text-xs uppercase tracking-widest font-bold block mb-1">Marketing de Interrupción</span>
+                      <p className="text-white/70">{row.inter}</p>
+                    </div>
+                    <div>
+                      <span className="text-naranja text-xs uppercase tracking-widest font-bold block mb-1">Marketing de Atracción</span>
+                      <p className="text-white/70">{row.attr}</p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </section>
 
