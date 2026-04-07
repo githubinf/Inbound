@@ -4,26 +4,24 @@
  */
 
 import React from "react";
-import { motion } from "motion/react";
 import { Check, ArrowRight, ShieldCheck, Star, HelpCircle, Mail, BarChart3, Target, BookOpen, Users, Zap, Clock, Award } from "lucide-react";
 
-const BotonPago = ({ texto = "COMPRAR AHORA – $9,99" }) => (
-  <motion.div 
-    whileHover={{ scale: 1.02 }}
-    whileTap={{ scale: 0.98 }}
-    className="flex flex-col items-center gap-4 my-12"
-  >
-    <button className="px-12 py-6 bg-gradient-to-r from-naranja to-dorado text-fondo font-bold text-xl uppercase tracking-widest rounded-sm hover:shadow-[0_0_30px_rgba(255,106,0,0.4)] transition-all duration-300 cursor-pointer">
+const BotonPago = ({ texto = "COMPRAR AHORA", href = "#oferta" }) => (
+  <div className="flex flex-col items-center gap-4 my-12">
+    <a 
+      href={href}
+      className="px-12 py-6 bg-gradient-to-r from-naranja to-dorado text-fondo font-bold text-xl uppercase tracking-widest rounded-sm hover:shadow-[0_0_30px_rgba(255,106,0,0.4)] transition-all duration-300 cursor-pointer text-center no-underline inline-block"
+    >
       {texto}
-    </button>
+    </a>
     <div className="flex items-center gap-2 text-amarillo/60 text-sm font-medium">
       <ShieldCheck size={16} />
       <span>Pago seguro y encriptado • Acceso inmediato</span>
     </div>
-  </motion.div>
+  </div>
 );
 
-const SeccionTexto = ({ children, className = "" }) => (
+const SeccionTexto = ({ children, className = "" }: { children: React.ReactNode, className?: string }) => (
   <div className={`max-w-3xl mx-auto px-6 mb-16 text-lg leading-relaxed text-white/80 ${className}`}>
     {children}
   </div>
@@ -52,32 +50,36 @@ export default function SalesPage() {
   return (
     <div className="min-h-screen selection:bg-naranja selection:text-white">
       {/* Hero Section */}
-      <header className="relative pt-24 pb-32 px-6 overflow-hidden border-b border-white/5">
+      <header className="relative pt-24 pb-24 px-6 overflow-hidden border-b border-white/5">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full pointer-events-none opacity-20">
           <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-rojo-oscuro blur-[120px] rounded-full" />
           <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-naranja blur-[120px] rounded-full" />
         </div>
 
-        <div className="max-w-5xl mx-auto relative z-10 text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-          >
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif mb-8 leading-[1.1] text-white">
+        <div className="max-w-6xl mx-auto relative z-10 flex flex-col md:flex-row items-center gap-12 text-center md:text-left">
+          <div className="flex-1">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-serif mb-8 leading-[1.1] text-white">
               Guía Completa de <span className="text-gradient">Inbound Marketing</span>
             </h1>
-            <p className="text-xl md:text-2xl text-amarillo font-medium mb-12 tracking-wide max-w-3xl mx-auto">
+            <p className="text-xl md:text-2xl text-amarillo font-medium mb-12 tracking-wide">
               Atraiga a sus clientes ideales con esta guía para negocios pequeños
             </p>
-            <div className="max-w-2xl mx-auto text-lg md:text-xl text-white/70 leading-relaxed mb-16">
+            <div className="text-lg md:text-xl text-white/70 leading-relaxed">
               La única hoja de ruta que convierte la teoría de la mercadotecnia digital en acciones concretas, medibles y rentables. Sin jerga innecesaria. Sin promesas falsas. Con un método probado para empresas que necesitan resultados sin depender de la publicidad cara.
             </div>
-          </motion.div>
+          </div>
+          <div className="flex-1 max-w-xs md:max-w-sm lg:max-w-md">
+            <img 
+              src="https://i.ibb.co/Sp4GnWM/guia-inbound-marketing.png" 
+              alt="Portada Guía Inbound Marketing" 
+              className="w-full h-auto shadow-[0_20px_50px_rgba(0,0,0,0.5)] rounded-lg transform hover:scale-105 transition-transform duration-500"
+              referrerPolicy="no-referrer"
+            />
+          </div>
         </div>
       </header>
 
-      <main className="py-24">
+      <main>
         {/* El Manifiesto */}
         <section className="py-24 bg-white/[0.01] border-y border-white/5">
           <EncabezadoEditorial subtitulo="Nuestra filosofía fundamental">
@@ -203,7 +205,7 @@ export default function SalesPage() {
           <div className="max-w-4xl mx-auto text-center px-6">
             <h4 className="text-2xl font-serif mb-4">Comience hoy mismo.</h4>
             <p className="text-white/60 mb-8">Invierta $9,99 para transformar su estrategia de mercadotecnia.</p>
-            <BotonPago />
+            <BotonPago texto="¡SÍ, QUIERO EMPEZAR A ATRAER CLIENTES!" />
           </div>
         </div>
 
@@ -264,11 +266,8 @@ export default function SalesPage() {
                 desc: "Porque el verdadero crecimiento no viene de la venta única, sino de los clientes que se quedan y recomiendan."
               }
             ].map((item, i) => (
-              <motion.div 
+              <div 
                 key={i}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
                 className="p-8 border border-white/10 bg-white/[0.02] hover:bg-white/[0.05] transition-colors"
               >
                 <h5 className="text-xl font-serif text-dorado mb-4 flex items-center gap-3">
@@ -278,7 +277,7 @@ export default function SalesPage() {
                 <p className="text-white/70 leading-relaxed">
                   {item.desc}
                 </p>
-              </motion.div>
+              </div>
             ))}
           </div>
         </section>
@@ -420,6 +419,8 @@ export default function SalesPage() {
             </div>
           </div>
         </section>
+
+        <div className="editorial-divider" />
 
         {/* Costo de la Inacción */}
         <section className="py-24 bg-rojo-oscuro/10 border-y border-rojo-oscuro/20">
@@ -569,7 +570,7 @@ export default function SalesPage() {
           <div className="max-w-4xl mx-auto text-center px-6">
             <h4 className="text-2xl font-serif mb-4">No deje que estos errores hundan su negocio.</h4>
             <p className="text-white/60 mb-8">Invierta $9,99 para transformar su estrategia de mercadotecnia.</p>
-            <BotonPago />
+            <BotonPago texto="TRANSFORMAR MI NEGOCIO HOY MISMO" />
           </div>
         </div>
 
@@ -711,7 +712,7 @@ export default function SalesPage() {
           <div className="max-w-4xl mx-auto text-center px-6">
             <h4 className="text-2xl font-serif mb-4">Empiece sin excusas.</h4>
             <p className="text-white/60 mb-8">Las herramientas gratuitas ya las tiene. Solo le falta el método.</p>
-            <BotonPago />
+            <BotonPago texto="ACCEDER A LA GUÍA COMPLETA AHORA" />
           </div>
         </div>
 
@@ -828,7 +829,7 @@ export default function SalesPage() {
           <div className="max-w-4xl mx-auto text-center px-6">
             <h4 className="text-2xl font-serif mb-4">Sin trucos. Sin bonos. Sin presión.</h4>
             <p className="text-white/60 mb-8">Solo un método probado que funciona si usted lo trabaja.</p>
-            <BotonPago />
+            <BotonPago texto="DESCARGAR MI COPIA Y EMPEZAR EL CAMBIO" />
           </div>
         </div>
 
@@ -849,16 +850,51 @@ export default function SalesPage() {
           </SeccionTexto>
         </section>
 
-        {/* QUINTO BOTÓN DE PAGO */}
-        <section className="py-32 bg-white/[0.03] border-t border-white/10">
-          <div className="max-w-4xl mx-auto px-6 text-center">
-            <h4 className="text-5xl font-serif mb-12">Guía Completa de Inbound Marketing</h4>
-            <div className="space-y-4 mb-12 text-xl text-white/70">
-              <p>Precio: <span className="text-white font-bold">$9,99</span></p>
-              <p>Garantía: <span className="text-white font-bold">treinta días. Sin riesgos.</span></p>
-              <p>Formato: <span className="text-white font-bold">libro electrónico, disponible inmediatamente.</span></p>
+        {/* SECCIÓN DE OFERTA PRINCIPAL - BLOQUE ÚNICO */}
+        <section id="oferta" className="py-32 bg-fondo relative overflow-hidden">
+          {/* Decoración de fondo para el bloque único */}
+          <div className="absolute inset-0 opacity-10">
+            <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_center,_var(--color-naranja)_0%,_transparent_70%)]" />
+          </div>
+
+          <div className="max-w-4xl mx-auto px-6 relative z-10">
+            <div className="bg-white/[0.03] border-2 border-dorado/30 p-12 md:p-20 rounded-lg shadow-[0_0_50px_rgba(255,167,38,0.1)] text-center">
+              <span className="font-mono text-naranja text-sm tracking-[0.4em] uppercase mb-8 block">Oferta Exclusiva</span>
+              <h4 className="text-4xl md:text-6xl font-serif mb-12 text-white leading-tight">
+                Guía Completa de <br />
+                <span className="text-gradient">Inbound Marketing</span>
+              </h4>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16 text-left">
+                <ul className="space-y-4">
+                  <li className="flex gap-3 text-white/80"><Check className="text-naranja shrink-0" size={20} /> <span>Método paso a paso de 90 días</span></li>
+                  <li className="flex gap-3 text-white/80"><Check className="text-naranja shrink-0" size={20} /> <span>Plantillas de viaje del cliente</span></li>
+                  <li className="flex gap-3 text-white/80"><Check className="text-naranja shrink-0" size={20} /> <span>Estrategias de SEO semántico</span></li>
+                </ul>
+                <ul className="space-y-4">
+                  <li className="flex gap-3 text-white/80"><Check className="text-naranja shrink-0" size={20} /> <span>Automatización de correos</span></li>
+                  <li className="flex gap-3 text-white/80"><Check className="text-naranja shrink-0" size={20} /> <span>Garantía total de 30 días</span></li>
+                  <li className="flex gap-3 text-white/80"><Check className="text-naranja shrink-0" size={20} /> <span>Acceso digital instantáneo</span></li>
+                </ul>
+              </div>
+
+              <div className="editorial-divider opacity-20 mb-12" />
+
+              <div className="space-y-4 mb-12">
+                <p className="text-white/50 line-through text-xl">Valor real: $47,00</p>
+                <p className="text-5xl md:text-7xl font-serif text-white">Solo <span className="text-dorado">$9,99</span></p>
+                <p className="text-amarillo font-medium tracking-widest uppercase text-sm">Pago único • Sin suscripciones</p>
+              </div>
+
+              <BotonPago 
+                texto="OBTENER ACCESO INMEDIATO POR SOLO $9,99" 
+                href="https://fcofrancis.pay.clickbank.net/?cbitems=13" 
+              />
+              
+              <p className="text-white/40 text-xs mt-8 italic">
+                Al hacer clic, será redirigido a nuestra plataforma de pago seguro ClickBank.
+              </p>
             </div>
-            <BotonPago texto="COMPRAR AHORA POR $9,99" />
           </div>
         </section>
       </main>
