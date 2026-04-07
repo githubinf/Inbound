@@ -884,39 +884,39 @@ export default function SalesPage() {
         </section>
 
         {/* SECCIÓN DE OFERTA PRINCIPAL - BLOQUE ÚNICO */}
-        <section className="py-32 bg-fondo relative overflow-hidden">
+        <section className="py-16 bg-fondo relative overflow-hidden">
           {/* Decoración de fondo para el bloque único */}
           <div className="absolute inset-0 opacity-10">
             <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_center,_var(--color-naranja)_0%,_transparent_70%)]" />
           </div>
 
-          <div id="oferta" className="max-w-4xl mx-auto px-6 relative z-10 scroll-mt-24">
-            <div className="bg-white/[0.03] border-2 border-dorado/30 p-12 md:p-20 rounded-lg shadow-[0_0_50px_rgba(255,167,38,0.1)] text-center">
-              <span className="font-mono text-naranja text-sm tracking-[0.4em] uppercase mb-8 block">Oferta Exclusiva</span>
-              <h4 className="text-4xl md:text-6xl font-serif mb-12 text-white leading-tight">
+          <div id="oferta" className="max-w-4xl mx-auto px-6 relative z-10 scroll-mt-10">
+            <div className="bg-white/[0.03] border-2 border-dorado/30 p-8 md:p-12 rounded-lg shadow-[0_0_50px_rgba(255,167,38,0.1)] text-center">
+              <span className="font-mono text-naranja text-xs tracking-[0.4em] uppercase mb-6 block">Oferta Exclusiva</span>
+              <h4 className="text-3xl md:text-5xl font-serif mb-8 text-white leading-tight">
                 Guía Completa de <br />
                 <span className="text-gradient">Inbound Marketing</span>
               </h4>
               
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16 text-left">
-                <ul className="space-y-4">
-                  <li className="flex gap-3 text-white/80"><Check className="text-naranja shrink-0" size={20} /> <span>Método paso a paso de 90 días</span></li>
-                  <li className="flex gap-3 text-white/80"><Check className="text-naranja shrink-0" size={20} /> <span>Plantillas de viaje del cliente</span></li>
-                  <li className="flex gap-3 text-white/80"><Check className="text-naranja shrink-0" size={20} /> <span>Estrategias de SEO semántico</span></li>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8 text-left">
+                <ul className="space-y-2">
+                  <li className="flex gap-3 text-white/80 text-sm md:text-base"><Check className="text-naranja shrink-0" size={18} /> <span>Método paso a paso de 90 días</span></li>
+                  <li className="flex gap-3 text-white/80 text-sm md:text-base"><Check className="text-naranja shrink-0" size={18} /> <span>Plantillas de viaje del cliente</span></li>
+                  <li className="flex gap-3 text-white/80 text-sm md:text-base"><Check className="text-naranja shrink-0" size={18} /> <span>Estrategias de SEO semántico</span></li>
                 </ul>
-                <ul className="space-y-4">
-                  <li className="flex gap-3 text-white/80"><Check className="text-naranja shrink-0" size={20} /> <span>Automatización de correos</span></li>
-                  <li className="flex gap-3 text-white/80"><Check className="text-naranja shrink-0" size={20} /> <span>Garantía total de 30 días</span></li>
-                  <li className="flex gap-3 text-white/80"><Check className="text-naranja shrink-0" size={20} /> <span>Acceso digital instantáneo</span></li>
+                <ul className="space-y-2">
+                  <li className="flex gap-3 text-white/80 text-sm md:text-base"><Check className="text-naranja shrink-0" size={18} /> <span>Automatización de correos</span></li>
+                  <li className="flex gap-3 text-white/80 text-sm md:text-base"><Check className="text-naranja shrink-0" size={18} /> <span>Garantía total de 30 días</span></li>
+                  <li className="flex gap-3 text-white/80 text-sm md:text-base"><Check className="text-naranja shrink-0" size={18} /> <span>Acceso digital instantáneo</span></li>
                 </ul>
               </div>
 
-              <div className="editorial-divider opacity-20 mb-12" />
+              <div className="editorial-divider opacity-20 mb-8" />
 
-              <div className="space-y-4 mb-12">
-                <p className="text-white/50 line-through text-xl">Valor real: $47,00</p>
-                <p className="text-5xl md:text-7xl font-serif text-white">Solo <span className="text-dorado">$9,99</span></p>
-                <p className="text-amarillo font-medium tracking-widest uppercase text-sm">Pago único • Sin suscripciones</p>
+              <div className="space-y-2 mb-8">
+                <p className="text-white/50 line-through text-lg">Valor real: $47,00</p>
+                <p className="text-4xl md:text-6xl font-serif text-white">Solo <span className="text-dorado">$9,99</span></p>
+                <p className="text-amarillo font-medium tracking-widest uppercase text-xs">Pago único • Sin suscripciones</p>
               </div>
 
               <BotonPago 
@@ -924,7 +924,7 @@ export default function SalesPage() {
                 href="https://fcofrancis.pay.clickbank.net/?cbitems=13" 
               />
               
-              <p className="text-white/40 text-xs mt-8 italic">
+              <p className="text-white/40 text-[10px] mt-6 italic">
                 Al hacer clic, será redirigido a nuestra plataforma de pago seguro ClickBank.
               </p>
             </div>
