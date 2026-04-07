@@ -6,20 +6,49 @@
 import React from "react";
 import { Check, ArrowRight, ShieldCheck, Star, HelpCircle, Mail, BarChart3, Target, BookOpen, Users, Zap, Clock, Award } from "lucide-react";
 
-const BotonPago = ({ texto = "COMPRAR AHORA", href = "#oferta" }) => (
-  <div className="flex flex-col items-center gap-4 my-12">
-    <a 
-      href={href}
-      className="px-12 py-6 bg-gradient-to-r from-naranja to-dorado text-fondo font-bold text-xl uppercase tracking-widest rounded-sm hover:shadow-[0_0_30px_rgba(255,106,0,0.4)] transition-all duration-300 cursor-pointer text-center no-underline inline-block"
-    >
-      {texto}
-    </a>
-    <div className="flex items-center gap-2 text-amarillo/60 text-sm font-medium">
-      <ShieldCheck size={16} />
-      <span>Pago seguro y encriptado • Acceso inmediato</span>
+const BotonPago = ({ texto = "COMPRAR AHORA", href = "#oferta", isSmall = false }) => {
+  const isInternal = href.startsWith("#");
+  
+  const handleClick = (e: React.MouseEvent) => {
+    if (isInternal) {
+      e.preventDefault();
+      const element = document.querySelector(href);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  };
+
+  const buttonClasses = `${
+    isSmall ? 'px-8 py-4 text-lg' : 'px-12 py-6 text-xl'
+  } bg-gradient-to-r from-naranja to-dorado text-fondo font-bold uppercase tracking-widest rounded-sm hover:shadow-[0_0_30px_rgba(255,106,0,0.4)] transition-all duration-300 cursor-pointer text-center no-underline inline-block border-none`;
+
+  return (
+    <div className={`flex flex-col items-center gap-4 ${isSmall ? 'my-6' : 'my-12'}`}>
+      {isInternal ? (
+        <button 
+          onClick={handleClick}
+          className={buttonClasses}
+        >
+          {texto}
+        </button>
+      ) : (
+        <a 
+          href={href}
+          className={buttonClasses}
+        >
+          {texto}
+        </a>
+      )}
+      {!isSmall && (
+        <div className="flex items-center gap-2 text-amarillo/60 text-sm font-medium">
+          <ShieldCheck size={16} />
+          <span>Pago seguro y encriptado • Acceso inmediato</span>
+        </div>
+      )}
     </div>
-  </div>
-);
+  );
+};
 
 const SeccionTexto = ({ children, className = "" }: { children: React.ReactNode, className?: string }) => (
   <div className={`max-w-3xl mx-auto px-6 mb-16 text-lg leading-relaxed text-white/80 ${className}`}>
@@ -50,7 +79,7 @@ export default function SalesPage() {
   return (
     <div className="min-h-screen selection:bg-naranja selection:text-white">
       {/* Hero Section */}
-      <header className="relative pt-24 pb-24 px-6 overflow-hidden border-b border-white/5">
+      <header className="relative pt-12 pb-24 px-6 overflow-hidden border-b border-white/5">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full pointer-events-none opacity-20">
           <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-rojo-oscuro blur-[120px] rounded-full" />
           <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-naranja blur-[120px] rounded-full" />
@@ -66,6 +95,9 @@ export default function SalesPage() {
             </p>
             <div className="text-lg md:text-xl text-white/70 leading-relaxed">
               La única hoja de ruta que convierte la teoría del marketing digital en acciones concretas, medibles y rentables. Sin jerga innecesaria. Sin promesas falsas. Con un método probado para empresas que necesitan resultados sin depender de la publicidad cara.
+            </div>
+            <div className="flex justify-center md:justify-start">
+              <BotonPago texto="QUIERO LA GUÍA AHORA" isSmall={true} />
             </div>
           </div>
           <div className="flex-1 max-w-xs md:max-w-sm lg:max-w-md">
