@@ -74,6 +74,7 @@ export default function SalesPage() {
               alt="Portada Guía Inbound Marketing" 
               className="w-full h-auto shadow-[0_20px_50px_rgba(0,0,0,0.5)] rounded-lg transform hover:scale-105 transition-transform duration-500"
               referrerPolicy="no-referrer"
+              fetchpriority="high"
             />
           </div>
         </div>
@@ -93,7 +94,7 @@ export default function SalesPage() {
               Sin embargo, muchos negocios pequeños siguen operando bajo el viejo paradigma: gritar más fuerte que la competencia. Invierten sus limitados recursos en anuncios que nadie quiere ver, esperando que, por pura estadística, alguien acabe comprando.
             </p>
             <p className="mb-6">
-              La mercadotecnia de atracción no es solo una técnica; es un cambio de postura. Es dejar de ser el cazador que persigue a su presa para convertirse en el faro que guía a quien ya está buscando una solución.
+              Inbound Marketing no es solo una técnica; es un cambio de postura. Es dejar de ser el cazador que persigue a su presa para convertirse en el faro que guía a quien ya está buscando una solución.
             </p>
             <p className="mb-6">
               Este libro defiende tres pilares innegociables:
@@ -117,7 +118,7 @@ export default function SalesPage() {
                 <div className="w-12 h-12 shrink-0 flex items-center justify-center rounded-full bg-naranja/10 text-naranja font-serif text-xl">3</div>
                 <div>
                   <h6 className="text-white font-serif text-lg mb-2">La paciencia estratégica</h6>
-                  <p>El crecimiento exponencial no ocurre de la noche a la mañana. La mercadotecnia de atracción es un interés compuesto de activos digitales. Cada artículo, cada correo y cada guía es un vendedor que trabaja para usted las veinticuatro horas del día, los siete días de la semana, para siempre.</p>
+                  <p>El crecimiento exponencial no ocurre de la noche a la mañana. Inbound Marketing es un interés compuesto de activos digitales. Cada artículo, cada correo y cada guía es un vendedor que trabaja para usted las veinticuatro horas del día, los siete días de la semana, para siempre.</p>
                 </div>
               </li>
             </ul>
@@ -174,7 +175,7 @@ export default function SalesPage() {
             Y cuando finalmente decide comprar, no lo hace porque usted lo presionó. Lo hace porque usted lo ayudó a confiar.
           </p>
           <p className="text-naranja font-bold text-xl mt-8">
-            Eso es la mercadotecnia de atracción. Eso es lo que este libro le enseña a implementar.
+            Eso es Inbound Marketing. Eso es lo que este libro le enseña a implementar.
           </p>
         </SeccionTexto>
 
@@ -305,7 +306,7 @@ export default function SalesPage() {
               </div>
               <div className="p-6 border border-white/10 bg-white/[0.02]">
                 <h6 className="text-white font-serif text-lg mb-2">El 60% restante es indiferente o no es su cliente ideal</h6>
-                <p className="text-white/60">Y eso está bien. La mercadotecnia de atracción también sirve para filtrar a quienes no valorarán su trabajo.</p>
+                <p className="text-white/60">Y eso está bien. Inbound Marketing también sirve para filtrar a quienes no valorarán su trabajo.</p>
               </div>
             </div>
             <p className="mb-6">
@@ -315,7 +316,7 @@ export default function SalesPage() {
               Cuando ese 37% finalmente decida dar el paso hacia la compra, ¿a quién cree que elegirán? ¿Al desconocido que les lanzó un anuncio intrusivo o al experto que les ha estado ayudando durante meses de forma gratuita?
             </p>
             <p className="text-naranja font-bold">
-              La respuesta es obvia. Y ese es el poder de la mercadotecnia de atracción.
+              La respuesta es obvia. Y ese es el poder de Inbound Marketing.
             </p>
           </SeccionTexto>
         </section>
@@ -411,7 +412,7 @@ export default function SalesPage() {
             </div>
             <div className="p-8 border border-white/10">
               <h6 className="text-rojo-oscuro font-serif text-lg mb-4">Mito: "Lleva demasiado tiempo"</h6>
-              <p className="text-white/60 italic">Realidad: Lo que lleva tiempo es perseguir clientes uno a uno. La mercadotecnia de atracción requiere una inversión inicial de tiempo, pero luego escala de forma exponencial y automática.</p>
+              <p className="text-white/60 italic">Realidad: Lo que lleva tiempo es perseguir clientes uno a uno. Inbound Marketing requiere una inversión inicial de tiempo, pero luego escala de forma exponencial y automática.</p>
             </div>
             <div className="p-8 border border-white/10">
               <h6 className="text-rojo-oscuro font-serif text-lg mb-4">Mito: "Regalar contenido canibaliza mis ventas"</h6>
@@ -583,7 +584,7 @@ export default function SalesPage() {
                 <li className="flex gap-3"><Check className="text-amarillo shrink-0" size={20} /> <span>Es emprendedor o tiene una pequeña empresa y quiere atraer clientes sin depender de publicidad cara.</span></li>
                 <li className="flex gap-3"><Check className="text-amarillo shrink-0" size={20} /> <span>Trabaja en mercadotecnia y necesita una guía estructurada para implementar estrategias de atracción.</span></li>
                 <li className="flex gap-3"><Check className="text-amarillo shrink-0" size={20} /> <span>Es autodidacta y quiere pasar de «sé de qué va» a «ya lo estoy haciendo».</span></li>
-                <li className="flex gap-3"><Check className="text-amarillo shrink-0" size={20} /> <span>Ha intentado implementar la mercadotecnia de atracción antes, pero se ha sentido abrumado.</span></li>
+                <li className="flex gap-3"><Check className="text-amarillo shrink-0" size={20} /> <span>Ha intentado implementar Inbound Marketing antes, pero se ha sentido abrumado.</span></li>
                 <li className="flex gap-3"><Check className="text-amarillo shrink-0" size={20} /> <span>Tiene un presupuesto ajustado y necesita estrategias que funcionen sin invertir miles de dólares.</span></li>
               </ul>
             </div>
@@ -627,7 +628,7 @@ export default function SalesPage() {
             {[
               {
                 num: "Uno",
-                titulo: "Los fundamentos de la mercadotecnia de atracción",
+                titulo: "Los fundamentos de Inbound Marketing",
                 desc: "Aprenderá qué es realmente esta metodología y por qué funciona en un mundo donde los consumidores han aprendido a ignorar la publicidad intrusiva. Definirá a su cliente ideal, mapeará su viaje de compra y establecerá objetivos medibles para su estrategia.",
                 lecciones: ["El cambio de paradigma: de interrumpir a atraer.", "La matriz de conciencia del comprador.", "Definición del 'Avatar' de cliente ideal sin adivinanzas."]
               },
@@ -723,13 +724,13 @@ export default function SalesPage() {
           </EncabezadoEditorial>
           <SeccionTexto>
             <p className="mb-6">
-              La mercadotecnia de atracción no es una estrategia de resultados inmediatos.
+              Inbound Marketing no es una estrategia de resultados inmediatos.
             </p>
             <p className="mb-6">
               Si usted busca una solución para vender más la semana que viene, este libro no le va a servir.
             </p>
             <p className="mb-6">
-              La mercadotecnia de atracción es como plantar un árbol. Primero prepara la tierra (define su estrategia). Luego planta la semilla (crea contenido). Luego riega y cuida (nutre a sus clientes potenciales). Los frutos llegan después, pero cuando llegan, son duraderos.
+              Inbound Marketing es como plantar un árbol. Primero prepara la tierra (define su estrategia). Luego planta la semilla (crea contenido). Luego riega y cuida (nutre a sus clientes potenciales). Los frutos llegan después, pero cuando llegan, son duraderos.
             </p>
             <p className="mb-6">
               Muchos negocios abandonan antes de tiempo. Publican tres artículos, no ven resultados y se rinden. Invierten un mes en construir su lista de correo, no ven ventas inmediatas y abandonan.
@@ -749,7 +750,7 @@ export default function SalesPage() {
             Las herramientas que necesita
           </EncabezadoEditorial>
           <SeccionTexto>
-            <p className="mb-8">Una de las excusas más comunes para no empezar es pensar que la mercadotecnia de atracción requiere herramientas caras. No es cierto.</p>
+            <p className="mb-8">Una de las excusas más comunes para no empezar es pensar que Inbound Marketing requiere herramientas caras. No es cierto.</p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
               <div className="p-6 border border-white/10">
                 <h6 className="text-dorado font-serif mb-2">Gestión de Clientes (CRM)</h6>
@@ -794,7 +795,7 @@ export default function SalesPage() {
             {[
               {
                 q: "¿Necesito tener un sitio web para aplicar lo que enseña este libro?",
-                a: "Idealmente, sí. La mercadotecnia de atracción necesita un lugar donde su contenido viva y donde sus clientes potenciales entreguen sus datos. Pero si no tiene sitio web, el libro le explica las opciones más económicas para empezar."
+                a: "Idealmente, sí. Inbound Marketing necesita un lugar donde su contenido viva y donde sus clientes potenciales entreguen sus datos. Pero si no tiene sitio web, el libro le explica las opciones más económicas para empezar."
               },
               {
                 q: "¿Cuánto tiempo debo dedicar cada semana?",
@@ -841,7 +842,7 @@ export default function SalesPage() {
           <SeccionTexto>
             <p className="mb-6">Usted ha llegado hasta aquí. Ha leído esta carta de ventas hasta el final. Eso significa que algo en lo que he descrito ha resonado con usted.</p>
             <p className="mb-6">Sabe que lo que está haciendo ahora no está funcionando como debería. Sabe que necesita un cambio de enfoque. Sabe que el método de interrumpir a sus clientes potenciales con publicidad intrusiva ya no es suficiente.</p>
-            <p className="mb-6">La mercadotecnia de atracción no es solo una metodología. Es una forma de entender los negocios. Es elegir atraer en lugar de interrumpir. Es construir relaciones en lugar de lanzar mensajes. Es jugar a largo plazo.</p>
+            <p className="mb-6">Inbound Marketing no es solo una metodología. Es una forma de entender los negocios. Es elegir atraer en lugar de interrumpir. Es construir relaciones en lugar de lanzar mensajes. Es jugar a largo plazo.</p>
             <p className="mb-6">Si usted está aquí, probablemente ya comparte esa filosofía. Ahora toca pasar de la intención a la acción.</p>
             <p className="mb-6">Las herramientas están en sus manos. El método está explicado paso a paso. Los recursos descargables están listos para ser usados.</p>
             <p className="mb-6 font-serif text-2xl text-white">Solo falta su decisión.</p>
@@ -851,13 +852,13 @@ export default function SalesPage() {
         </section>
 
         {/* SECCIÓN DE OFERTA PRINCIPAL - BLOQUE ÚNICO */}
-        <section id="oferta" className="py-32 bg-fondo relative overflow-hidden">
+        <section className="py-32 bg-fondo relative overflow-hidden">
           {/* Decoración de fondo para el bloque único */}
           <div className="absolute inset-0 opacity-10">
             <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_center,_var(--color-naranja)_0%,_transparent_70%)]" />
           </div>
 
-          <div className="max-w-4xl mx-auto px-6 relative z-10">
+          <div id="oferta" className="max-w-4xl mx-auto px-6 relative z-10 scroll-mt-24">
             <div className="bg-white/[0.03] border-2 border-dorado/30 p-12 md:p-20 rounded-lg shadow-[0_0_50px_rgba(255,167,38,0.1)] text-center">
               <span className="font-mono text-naranja text-sm tracking-[0.4em] uppercase mb-8 block">Oferta Exclusiva</span>
               <h4 className="text-4xl md:text-6xl font-serif mb-12 text-white leading-tight">
@@ -904,7 +905,7 @@ export default function SalesPage() {
           <p className="mb-4">Guía Completa de Inbound Marketing • Atraiga a sus clientes ideales</p>
           <p className="mb-8">© Francisco González. Todos los derechos reservados.</p>
           <div className="max-w-2xl mx-auto p-6 border border-white/5 bg-white/[0.01] text-xs leading-relaxed">
-            Nota final: Este libro ha sido escrito con el apoyo de herramientas de inteligencia artificial para estructurar ideas y corregir errores, pero cada concepto, cada ejercicio y cada recomendación práctica proviene de la experiencia real del autor implementando estrategias de mercadotecnia de atracción para decenas de negocios.
+            Nota final: Este libro ha sido escrito con el apoyo de herramientas de inteligencia artificial para estructurar ideas y corregir errores, pero cada concepto, cada ejercicio y cada recomendación práctica proviene de la experiencia real del autor implementando estrategias de Inbound Marketing para decenas de negocios.
           </div>
         </div>
       </footer>

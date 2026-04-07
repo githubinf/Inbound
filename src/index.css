@@ -14,6 +14,10 @@
 }
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     @apply bg-fondo text-white font-sans antialiased selection:bg-naranja selection:text-white;
   }
