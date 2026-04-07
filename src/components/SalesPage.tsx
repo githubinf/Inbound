@@ -35,6 +35,8 @@ const BotonPago = ({ texto = "COMPRAR AHORA", href = "#oferta", isSmall = false 
       ) : (
         <a 
           href={href}
+          target="_blank"
+          rel="noopener noreferrer nofollow"
           className={buttonClasses}
         >
           {texto}
