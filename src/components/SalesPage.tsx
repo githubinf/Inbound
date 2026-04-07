@@ -65,7 +65,7 @@ export default function SalesPage() {
               Atraiga a sus clientes ideales con esta guía para negocios pequeños
             </p>
             <div className="text-lg md:text-xl text-white/70 leading-relaxed">
-              La única hoja de ruta que convierte la teoría de la mercadotecnia digital en acciones concretas, medibles y rentables. Sin jerga innecesaria. Sin promesas falsas. Con un método probado para empresas que necesitan resultados sin depender de la publicidad cara.
+              La única hoja de ruta que convierte la teoría del marketing digital en acciones concretas, medibles y rentables. Sin jerga innecesaria. Sin promesas falsas. Con un método probado para empresas que necesitan resultados sin depender de la publicidad cara.
             </div>
           </div>
           <div className="flex-1 max-w-xs md:max-w-sm lg:max-w-md">
@@ -185,7 +185,7 @@ export default function SalesPage() {
         <SeccionTexto>
           <h3 className="text-3xl font-serif text-white mb-8">Lo que otros libros no le cuentan: la teoría no paga facturas.</h3>
           <p className="mb-6">
-            He leído decenas de libros de mercadotecnia. La mayoría son hermosos en la teoría y decepcionantes en la práctica.
+            He leído decenas de libros de marketing. La mayoría son hermosos en la teoría y decepcionantes en la práctica.
           </p>
           <p className="mb-6">
             Le explican qué es un «perfil de cliente ideal», pero no cómo construirlo con los recursos que usted tiene ahora. Le hablan del «viaje del comprador», pero no le dan las plantillas para mapearlo. Le prometen que el «contenido es el rey», pero no le muestran un calendario editorial para los próximos treinta días.
@@ -205,7 +205,7 @@ export default function SalesPage() {
         <div className="bg-white/5 py-16 border-y border-white/10">
           <div className="max-w-4xl mx-auto text-center px-6">
             <h4 className="text-2xl font-serif mb-4">Comience hoy mismo.</h4>
-            <p className="text-white/60 mb-8">Invierta $9,99 para transformar su estrategia de mercadotecnia.</p>
+            <p className="text-white/60 mb-8">Invierta $9,99 para transformar su estrategia de marketing.</p>
             <BotonPago texto="¡SÍ, QUIERO EMPEZAR A ATRAER CLIENTES!" />
           </div>
         </div>
@@ -224,7 +224,7 @@ export default function SalesPage() {
             {[
               {
                 titulo: "Un mapa del viaje de su cliente ideal",
-                desc: "Sabrá exactamente qué piensa, qué siente y qué busca su cliente en cada etapa del proceso de decisión. Esto no es adivinanza. Es un documento estratégico que guiará toda su mercadotecnia."
+                desc: "Sabrá exactamente qué piensa, qué siente y qué busca su cliente en cada etapa del proceso de decisión. Esto no es adivinanza. Es un documento estratégico que guiará todo su marketing."
               },
               {
                 titulo: "Una lista de temas validada con datos reales",
@@ -290,7 +290,7 @@ export default function SalesPage() {
           </EncabezadoEditorial>
           <SeccionTexto>
             <p className="mb-6">
-              Uno de los mayores errores de la mercadotecnia tradicional es tratar a todo el mercado como si estuviera listo para comprar en este preciso instante. La realidad es mucho más compleja.
+              Uno de los mayores errores del marketing tradicional es tratar a todo el mercado como si estuviera listo para comprar en este preciso instante. La realidad es mucho más compleja.
             </p>
             <p className="mb-6">
               Según diversos estudios de comportamiento del consumidor, en cualquier mercado dado, solo el 3% de las personas están en "modo compra" activo. El otro 97% se divide en etapas de conciencia:
@@ -371,7 +371,7 @@ export default function SalesPage() {
         {/* Hoja de Ruta */}
         <section className="py-24">
           <EncabezadoEditorial subtitulo="Su plan de acción">
-            Hoja de Ruta: Sus primeros 90 días con la Mercadotecnia de Atracción
+            Hoja de Ruta: Sus primeros 90 días con Inbound Marketing
           </EncabezadoEditorial>
           <SeccionTexto>
             <div className="space-y-12">
@@ -399,7 +399,7 @@ export default function SalesPage() {
         {/* Mitos y Realidades */}
         <section className="py-24 bg-white/[0.01]">
           <EncabezadoEditorial subtitulo="Claridad absoluta">
-            Mitos y Realidades de la Mercadotecnia de Atracción
+            Mitos y Realidades de Inbound Marketing
           </EncabezadoEditorial>
           <div className="max-w-5xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="p-8 border border-white/10">
@@ -452,7 +452,7 @@ export default function SalesPage() {
         {/* Glosario */}
         <section className="py-24">
           <EncabezadoEditorial subtitulo="Hablamos el mismo idioma">
-            Glosario de la Mercadotecnia de Atracción
+            Glosario de Inbound Marketing
           </EncabezadoEditorial>
           <div className="max-w-4xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-8">
             <div>
@@ -503,7 +503,7 @@ export default function SalesPage() {
             Pero también aprendió lo que funciona.
           </p>
           <p className="mb-6">
-            Ha asesorado a más de cincuenta negocios de diferentes sectores. Ha ayudado a emprendedores individuales a construir su primera audiencia desde cero. Ha formado equipos de mercadotecnia que querían dejar atrás las tácticas intrusivas.
+            Ha asesorado a más de cincuenta negocios de diferentes sectores. Ha ayudado a emprendedores individuales a construir su primera audiencia desde cero. Ha formado equipos de marketing que querían dejar atrás las tácticas intrusivas.
           </p>
           <p className="mb-6">
             Su especialidad no es trabajar con grandes presupuestos. Es hacer más con menos.
@@ -570,7 +570,7 @@ export default function SalesPage() {
         <div className="bg-white/5 py-16 border-y border-white/10">
           <div className="max-w-4xl mx-auto text-center px-6">
             <h4 className="text-2xl font-serif mb-4">No deje que estos errores hundan su negocio.</h4>
-            <p className="text-white/60 mb-8">Invierta $9,99 para transformar su estrategia de mercadotecnia.</p>
+            <p className="text-white/60 mb-8">Invierta $9,99 para transformar su estrategia de marketing.</p>
             <BotonPago texto="TRANSFORMAR MI NEGOCIO HOY MISMO" />
           </div>
         </div>
@@ -582,7 +582,7 @@ export default function SalesPage() {
               <h4 className="text-3xl font-serif mb-8 text-amarillo">Este libro es para usted si:</h4>
               <ul className="space-y-4 text-white/80">
                 <li className="flex gap-3"><Check className="text-amarillo shrink-0" size={20} /> <span>Es emprendedor o tiene una pequeña empresa y quiere atraer clientes sin depender de publicidad cara.</span></li>
-                <li className="flex gap-3"><Check className="text-amarillo shrink-0" size={20} /> <span>Trabaja en mercadotecnia y necesita una guía estructurada para implementar estrategias de atracción.</span></li>
+                <li className="flex gap-3"><Check className="text-amarillo shrink-0" size={20} /> <span>Trabaja en marketing y necesita una guía estructurada para implementar estrategias de atracción.</span></li>
                 <li className="flex gap-3"><Check className="text-amarillo shrink-0" size={20} /> <span>Es autodidacta y quiere pasar de «sé de qué va» a «ya lo estoy haciendo».</span></li>
                 <li className="flex gap-3"><Check className="text-amarillo shrink-0" size={20} /> <span>Ha intentado implementar Inbound Marketing antes, pero se ha sentido abrumado.</span></li>
                 <li className="flex gap-3"><Check className="text-amarillo shrink-0" size={20} /> <span>Tiene un presupuesto ajustado y necesita estrategias que funcionen sin invertir miles de dólares.</span></li>
@@ -641,7 +641,7 @@ export default function SalesPage() {
               {
                 num: "Tres",
                 titulo: "Generación de clientes potenciales",
-                desc: "Construirá su primer imán de clientes potenciales, diseñará una página de destino optimizada y configurará un formulario de captación efectivo. Aprenderá la diferencia entre un cliente potencial calificado para mercadotecnia y uno calificado para ventas.",
+                desc: "Construirá su primer imán de clientes potenciales, diseñará una página de destino optimizada y configurará un formulario de captación efectivo. Aprenderá la diferencia entre un cliente potencial calificado para marketing y uno calificado para ventas.",
                 lecciones: ["Anatomía de un imán de clientes que convierte al 20%.", "Psicología de los formularios: menos es más.", "Configuración técnica sin necesidad de ser programador."]
               },
               {
@@ -658,7 +658,7 @@ export default function SalesPage() {
               },
               {
                 num: "Seis",
-                titulo: "Mercadotecnia de contenidos en redes sociales",
+                titulo: "Marketing de contenidos en redes sociales",
                 desc: "Seleccionará las plataformas adecuadas según su cliente ideal, diseñará un calendario de publicaciones para cuatro semanas y configurará la programación automática con herramientas gratuitas.",
                 lecciones: ["Por qué no necesita estar en todas las redes sociales.", "El algoritmo explicado para dueños de negocio.", "Cómo generar interacción real sin trucos baratos."]
               },
@@ -670,7 +670,7 @@ export default function SalesPage() {
               },
               {
                 num: "Ocho",
-                titulo: "Automatización de la mercadotecnia",
+                titulo: "Automatización del marketing",
                 desc: "Diseñará su primer flujo de trabajo automatizado en papel, lo configurará en su herramienta preferida y definirá criterios básicos de puntuación de clientes potenciales para saber cuándo están listos para la venta.",
                 lecciones: ["Lead Scoring: cómo identificar a los clientes con la tarjeta en la mano.", "Flujos de nutrición según el comportamiento del usuario.", "Integración entre su web y su CRM."]
               },
@@ -779,9 +779,9 @@ export default function SalesPage() {
             <h4 className="text-4xl font-serif mb-8">Garantía de devolución del dinero durante treinta días</h4>
             <SeccionTexto className="text-center">
               <p className="mb-6">Quiero que esta decisión sea fácil para usted.</p>
-              <p className="mb-6">Si compra este libro, lo trabaja durante treinta días y no siente que ha avanzado en su estrategia de mercadotecnia, le devuelvo cada uno de sus $9,99. Sin preguntas. Sin condiciones.</p>
+              <p className="mb-6">Si compra este libro, lo trabaja durante treinta días y no siente que ha avanzado en su estrategia de marketing, le devuelvo cada uno de sus $9,99. Sin preguntas. Sin condiciones.</p>
               <p className="mb-6">No necesito que me explique por qué no le funcionó. No necesito que me envíe una lista de ejercicios completados. Solo necesita escribirme y le reembolsaré su dinero.</p>
-              <p className="text-amarillo font-medium">Esta garantía no es un truco de mercadotecnia. Es la expresión de mi confianza en que este libro le será útil si usted lo trabaja.</p>
+              <p className="text-amarillo font-medium">Esta garantía no es un truco de marketing. Es la expresión de mi confianza en que este libro le será útil si usted lo trabaja.</p>
             </SeccionTexto>
           </div>
         </section>
@@ -802,7 +802,7 @@ export default function SalesPage() {
                 a: "Depende de sus objetivos. Para empezar, con cinco o seis horas a la semana puede implementar los fundamentos en un par de meses. La clave es la constancia diaria."
               },
               {
-                q: "¿Necesito experiencia previa en mercadotecnia?",
+                q: "¿Necesito experiencia previa en marketing?",
                 a: "No. El libro está escrito para principiantes. Los conceptos se explican desde cero. Lo único que necesita es la voluntad de aprender haciendo."
               },
               {
