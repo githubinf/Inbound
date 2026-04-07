@@ -106,7 +106,7 @@ export default function SalesPage() {
               alt="Portada Guía Inbound Marketing" 
               className="w-full h-auto shadow-[0_20px_50px_rgba(0,0,0,0.5)] rounded-lg transform hover:scale-105 transition-transform duration-500"
               referrerPolicy="no-referrer"
-              fetchpriority="high"
+              fetchPriority="high"
             />
           </div>
         </div>
